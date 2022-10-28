@@ -196,6 +196,10 @@ body{
     max-width: 440px;
 }
 
+.function .image{
+    background-color: #FFF;
+}
+
 .function .image img{
     display: flex;
     width: 100%;

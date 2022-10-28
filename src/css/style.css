@@ -1,0 +1,108 @@
+html{
+    font-size: 68.5%;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: "header header"
+                         "headline headline"
+                         "about about"
+                         "function function"
+                         "contact contact"
+                         "footer footer";
+    grid-template-columns: 2, 1fr;
+    background-color: #0F123F;   
+    
+}
+
+.header{
+    grid-area: header;    
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-container ul{
+    display: flex;
+}
+
+.header nav ul li{
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;  
+}
+
+.header .header-container a h2{
+   font-size: 3.1rem;
+   text-transform: uppercase;
+   padding: 40px;
+   font-weight: 900;
+}
+
+.headline{
+    grid-area: headline;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.headline .text{
+    margin-top: 210px;
+    width: 550px;
+    color: #FFF;
+    margin-left: 40px;
+}
+
+.headline .text h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.headline .text p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: #8794BA;
+    margin-top: 15px;
+}
+
+.headline .text a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background-color: #0DE67B;
+    padding: 15px 85px;
+    border-radius: 68px;
+    text-align: center;
+    margin-top: 20px; 
+    
+}
+
+
+.headline .image img{
+    
+}
+
+.about{
+    grid-area: about;
+    background-color: cornflowerblue;
+}
+
+.function{
+    grid-area: funciton;
+    background-color: darkolivegreen;
+}
+
+.contact{
+    grid-area: contact;
+    background-color: lightcoral;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: teal;
+}

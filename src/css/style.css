@@ -12,7 +12,7 @@ body{
                          "contact contact"
                          "footer footer";
     grid-template-columns: 2, 1fr;
-    background-color: #0F123F;   
+    background-color: #0F123F;
 }
 
 .header{
@@ -206,11 +206,106 @@ body{
 }
 
 .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: contact;
-    background-color: lightcoral;
+    background-color: #FFF;
+    margin-top: 130px;
+    border-top: 20px solid #0DE67B;
 }
+
+
+.contact .box-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.contact .box-contact h3{
+    font: normal normal 700 4rem 'Roboto';
+    color: #0F123F;
+    max-width: 485px;
+}
+
+.contact .box-contact .form{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contact .box-contact input{
+    box-shadow: 1px 1px 5px 1px rgb(190, 190, 190) ;
+    border-radius: 15px;
+    height: 52px;
+    text-align: center;
+}
+
+.contact .box-contact textarea{
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 2px rgb(190, 190, 190);
+    margin: 10px 20px;
+    resize: none;
+}
+
+.contact .box-contact .form-email{
+    margin: 20px;
+}
+
+.contact .box-contact  .box{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.contact .box-contact  .box input{
+    width: 50%;
+}
+
+.contact .box-contact .form-email input{
+    width: 100%;
+}
+
+.contact .box-contact form .btn{
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 15px;   
+    background-color: #0DE67B;
+    box-shadow: 1px 1px 5px 1px rgb(190, 190, 190);
+    padding: 15px 85px;
+    color: white;
+}
+
+.contact .box-contact form .btn:hover{
+    background-color: #099c53;
+}
+
 
 .footer{
     grid-area: footer;
-    background-color: teal;
+    background-color: #FFF;
+    padding: 30px;
+}
+
+.footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #2A407C;
+
+}
+
+.footer nav ul{
+    display: flex;
+}
+
+.footer nav ul li{
+    padding: 10px;
+}
+.footer nav ul li a{
+    color: #8794BA;
+    margin-right: 40px;
 }

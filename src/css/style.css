@@ -259,6 +259,17 @@ body{
     gap: 10px;
 }
 
+.contact .box-contact .mini-box{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.contact .box-contact .mini-box a{
+    margin-left: 45px;
+}
+
 .contact .box-contact  .box input{
     width: 50%;
 }

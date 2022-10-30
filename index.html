@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATANOW</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/resposive.css">
@@ -113,16 +114,23 @@
                     <div class="form-email">
                         <input type="text" placeholder="Seu Melhor e-mail">
                     </div>
+
                     <div class="box">
                         <input type="text" placeholder="Nome">
                         <input type="text" placeholder="Empresa">
                     </div>    
+
                     <div class="text-area">
-                        <textarea name="" id=""  placeholder="Digite seu texto aqui" cols="70" rows="10"></textarea>
+                        <textarea name="" id=""  placeholder="Digite seu texto aqui" cols="90" rows="10"></textarea>
                     </div>
-                    <a href="">
-                        <button class="btn">Entre em Contato</button>
-                    </a>
+
+                    <div class="mini-box">
+                        <div class="g-recaptcha" data-sitekey="6Lel_cQiAAAAAJsdCoDTvdKK4SPZTVUMvEUK5u2k"></div>
+                        
+                        <a href="">
+                            <button class="btn">Entre em Contato</button>
+                        </a>
+                    </div>
                 </form>
             </div>
         </div>

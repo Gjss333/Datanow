@@ -1,0 +1,50 @@
+.headline{
+    grid-area: headline;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+}
+
+.headline .container-headline{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.headline .text{
+    margin-top: 210px;
+    max-width: 550px;
+    color: #FFF;
+    margin-left: 40px;
+}
+
+.headline .text h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.headline .text p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 27px;
+    color: #8794BA;
+    margin-top: 15px;
+}
+
+.headline .text a{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background-color: #0DE67B;
+    padding: 15px 85px;
+    border-radius: 68px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.headline .text a:hover{
+    background-color: #099c53;
+    transition: 0.3s ease-in-out;
+    
+}

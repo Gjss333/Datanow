@@ -1,0 +1,31 @@
+.footer{
+    grid-area: footer;
+    background-color: #FFF;
+}
+
+.footer .container-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 30px 80px;
+    margin-top: 40px;
+    border-top: 1px solid #2A407C;
+
+}
+
+.footer nav ul{
+    display: flex;
+}
+
+.footer nav ul li{
+    padding: 10px;
+}
+.footer nav ul li a{
+    color: #8794BA;
+    margin-right: 40px;
+}
+
+.footer nav ul li a:hover{
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}

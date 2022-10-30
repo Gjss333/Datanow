@@ -1,0 +1,34 @@
+.header{
+    grid-area: header;
+   
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;  
+}
+
+.header .header-container ul{
+    display: flex;
+}
+
+.header nav ul li{
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header nav ul li:hover a{
+    color: #0DE67B;
+    transition: 0.3s ease-in-out;
+}
+
+.header .header-container a img{
+   font-size: 3.1rem;
+   text-transform: uppercase;
+
+   margin-left: 50px;
+   font-weight: 900;
+}

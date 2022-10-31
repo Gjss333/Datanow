@@ -63,3 +63,15 @@
 .product .container-product .card.right img{
        margin-top: 40px;
 }
+
+@media(max-width: 1024px){
+    .product .text-product{
+        padding: 0 40px;
+    }
+    
+    .product .container-product{
+        gap: 15px;
+        padding: 40px;
+        
+    }
+}

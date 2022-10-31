@@ -20,7 +20,7 @@
     font-weight: 500;
 }
 
-.header nav ul li:hover a{
+.header nav ul li a:hover{
     color: #0DE67B;
     transition: 0.3s ease-in-out;
 }

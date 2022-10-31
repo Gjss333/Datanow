@@ -15,37 +15,38 @@
     <link rel="stylesheet" href="src/css/function.css">
     <link rel="stylesheet" href="src/css/contact.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    
 
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header-container">
             <a href="/index.html">
                 <img src="src/images/logoBranca.svg" alt="">
             </a>
-
+            
             <nav>
                 <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Conheça</a></li>
-                    <li><a href="">Funcionalidade</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#conheca">Conheça</a></li>
+                    <li><a href="#funcionalidades">Funcionalidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="headline">
+    <section class="headline" id="conheca">
         <div class="container-headline">
-
+            
             <div class="text">
                 <h1>Esse texto é uma headline super legal</h1>
                 <p>E esse texto aqui acompanha o título. Já que eu preciso falar muito, vou falar sobre Emas. Considerada a maior ave do continente americano, a ema pode chegar a medir 1,70 m de altura! Impressionante, não é?</p>
@@ -57,29 +58,29 @@
             </div>
         </div>
     </section>
-
-    <section class="product">
+    
+    <section class="product" id="funcionalidades">
         <div class="text-product">
             <h2>Conheça</h2>
             <p>Ema, também conhecida como nandu, nhandu, guaripé e xuri, é uma ave da família Rheidae nativa da América do Sul. Apesar de possuir grandes asas, é uma ave não voadora.</p>
         </div>
         
          <div class="container-product">
-
+             
             <div class="card left">
                 <h3 class="title">99% dos dados adicionados sem fonte não possuem veracidade.</h3>
                 <p>Inclusive esse texto aqui, que não possui fundo científico algum e é 100% errado. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                 <img src="src/images/cardFicticio-1.svg" alt="">
             </div>
-                
+            
             <div class="card right">
                 <h3 class="title">Aumento de 24% em vendas</h3>
                 <p class="p-right">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                
                 <img src="src/images/cardFicticio-2.svg" alt="">
             </div>
-
+            
         </div>
     </section>
     <section class="function">
@@ -112,34 +113,35 @@
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contato">
         <div class="form">
-        <div class="box-contact">
+            <div class="box-contact">
             <h3>Sed ut perspiciatis unde omnis iste natus error.</h3>
-                <form>
+                <form id="form">
                     <div class="form-email">
-                        <input type="text" placeholder="Seu Melhor e-mail">
+                        <span id="spanEmail"></span>
+                        <input type="text" id="email" placeholder="Seu Melhor e-mail" onkeydown="emailValidation()">
                     </div>
-
+                    
                     <div class="box">
-                        <input type="text" placeholder="Nome">
-                        <input type="text" placeholder="Empresa">
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="text" id="empresa" placeholder="Empresa">                        
                     </div>    
-
+                    
                     <div class="text-area">
-                        <textarea name="" id=""  placeholder="Digite seu texto aqui" cols="90" rows="10"></textarea>
+                        <textarea placeholder="Digite seu texto aqui" cols="90" rows="10"></textarea>
                     </div>
-
+                    
                     <div class="mini-box">
                         <div class="g-recaptcha" data-sitekey="6Lel_cQiAAAAAJsdCoDTvdKK4SPZTVUMvEUK5u2k"></div>
                         
                         <a href="">
-                            <button class="btn">Entre em Contato</button>
+                            <button onclick="captchaValidatio()" class="btn">Entre em Contato</button>
                         </a>
                     </div>
                 </form>
             </div>
-        </div>
+        </div>  
     </section>
     <footer class="footer">
         <div class="container-footer">
@@ -158,5 +160,6 @@
         </div>
     </footer>
     
+    <script type="text/javascript" src="src/js/validation.js"></script>
 </body>
 </html>

@@ -26,9 +26,45 @@
 }
 
 .header .header-container a img{
-   font-size: 3.1rem;
    text-transform: uppercase;
-
    margin-left: 50px;
-   font-weight: 900;
+}
+
+@media(max-width: 768px){
+    .header .header-container{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .header .header-container nav{
+        margin-top: 30px;
+    }
+
+    .header nav ul li{
+        padding: 50px;
+    }
+
+}
+
+@media(max-width: 375px) {
+    .header .header-container ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .header .header-container a img{
+        display: flex;
+        margin-left: 0;
+        font-size: 4rem;
+    }
+
+    .header .header-container a{
+        display: flex;        
+    }
+
+    .header nav ul li{
+        font-size: 2.5rem;
+    }
 }

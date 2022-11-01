@@ -8,6 +8,10 @@
     border-top: 20px solid #0DE67B;
 }
 
+.contact .form{
+    padding: 20px 0;
+}
+
 
 .contact .box-contact{
     display: flex;
@@ -90,4 +94,16 @@
 
 .contact .box-contact form .btn:hover{
     background-color: #099c53;
+}
+
+@media(max-width: 375px){
+    .contact .box-contact .mini-box{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact .box-contact .mini-box a{
+        margin-left: 0;
+    }
 }

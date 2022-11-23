@@ -1,1 +1,1 @@
-# Teste Técnico para Vaga de Front-End 
+#Landing page para uma empresa ficticia
